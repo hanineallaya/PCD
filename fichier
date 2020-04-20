@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+file="labels.txt"
+n=1
+while read line; do
+# reading each line
+n=$((n+1))
+`sed -i 's/16/0/g' $line`
+done < $file
+
+
+
